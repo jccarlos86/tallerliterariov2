@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/fontAwesome/all.min.css">
+    <link rel="stylesheet" href="css/fuentes.css?v=170520202304">
+    <link rel="stylesheet" href="css/loader.css?v=170520202304">
+    <link rel="stylesheet" href="css/fondos.css?v=170520202304">
+    <title>Escrito</title>
+
+    <style>
+        #menuContextual{
+            width:250px;
+            position:absolute;      
+            
+            -moz-box-shadow: 0 0 5px #888;
+            -webkit-box-shadow: 0 0 5px#888;
+            box-shadow: 0 0 5px #888;
+        }
+    </style>
+
+
+</head>
+<body class="baloo leaves-pattern">
+    <div class="container-fluid">
+        <!-- menu -->
+        <div class="row pb-3">
+            <div class="col-sm-12">
+                <nav class="navbar navbar-expand-lg border-bottom p-2">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item mr-4">
+                                <a id="" href="inicio.html" class="nav-link nav-item">
+                                    <span class="">Inicio</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mr-4">
+                                <a id="" href="perfil.html" class="nav-link nav-item">
+                                    <span class="">Mi perfil</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mr-4">
+                                <a id="" href="taller.html" class="nav-link nav-item">
+                                    <span class="">Taller</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mr-4">
+                                <a href="#" id="nocturno" class="nav-link nav-item prevent-default vision">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-moon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M14.53 10.53a7 7 0 0 1-9.058-9.058A7.003 7.003 0 0 0 8 15a7.002 7.002 0 0 0 6.53-4.47z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="nav-item mr-4">
+                                <a href="#" id="diurno" class="nav-link nav-item prevent-default vision">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-sun" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.5 8a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0z"/>
+                                        <path fill-rule="evenodd" d="M8.202.28a.25.25 0 0 0-.404 0l-.91 1.255a.25.25 0 0 1-.334.067L5.232.79a.25.25 0 0 0-.374.155l-.36 1.508a.25.25 0 0 1-.282.19l-1.532-.245a.25.25 0 0 0-.286.286l.244 1.532a.25.25 0 0 1-.189.282l-1.509.36a.25.25 0 0 0-.154.374l.812 1.322a.25.25 0 0 1-.067.333l-1.256.91a.25.25 0 0 0 0 .405l1.256.91a.25.25 0 0 1 .067.334L.79 10.768a.25.25 0 0 0 .154.374l1.51.36a.25.25 0 0 1 .188.282l-.244 1.532a.25.25 0 0 0 .286.286l1.532-.244a.25.25 0 0 1 .282.189l.36 1.508a.25.25 0 0 0 .374.155l1.322-.812a.25.25 0 0 1 .333.067l.91 1.256a.25.25 0 0 0 .405 0l.91-1.256a.25.25 0 0 1 .334-.067l1.322.812a.25.25 0 0 0 .374-.155l.36-1.508a.25.25 0 0 1 .282-.19l1.532.245a.25.25 0 0 0 .286-.286l-.244-1.532a.25.25 0 0 1 .189-.282l1.508-.36a.25.25 0 0 0 .155-.374l-.812-1.322a.25.25 0 0 1 .067-.333l1.256-.91a.25.25 0 0 0 0-.405l-1.256-.91a.25.25 0 0 1-.067-.334l.812-1.322a.25.25 0 0 0-.155-.374l-1.508-.36a.25.25 0 0 1-.19-.282l.245-1.532a.25.25 0 0 0-.286-.286l-1.532.244a.25.25 0 0 1-.282-.189l-.36-1.508a.25.25 0 0 0-.374-.155l-1.322.812a.25.25 0 0 1-.333-.067L8.203.28zM8 2.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- escrito -->
+        <div class="row pt-2">
+            <div class="col-sm-12">
+                <div id="alertMarcadores" class="alert alert-warning w-75 mx-auto" role="alert">
+                    <span id="textoAlertaMarcador"></span>
+                    <a data-ver="1" href="#" class="alert-link prevent-default mostrar-marcadores">
+                        Ver Marcadores.
+                    </a>
+                    <a data-ver="0" href="#" class="alert-link prevent-default mostrar-marcadores">
+                        Ocultar Marcadores.
+                    </a>
+                </div>
+                <div class="w-75 mx-auto mb-3 contenedor-escrito">
+                    <div class="card text-secondary bg-transparent lectura">
+                        <h3 id="titulo" class="card-header"></h3>
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <p id="texto"></p>
+                                <footer id="autor" class="blockquote-footer text-capitalize"></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- contador reconociminetos -->
+        <div class="row">
+            <div class="col-sm-12">
+                <ul class="w-75 mx-auto nav contenedor-reacciones">
+                    <li class="nav-item p-2">
+                        <a id="reconocimiento" href="#" class="prevent-default reaccion" data-tipo="2">
+                            <i class="fas fa-medal h5"></i>
+                            <span id="cntReconocimiento"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a id="likes" href="#" class="prevent-default reaccion" data-tipo="1">
+                            <i class="far fa-thumbs-up h5"></i>
+                            <span id="cntLikes"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a id="dislikes" href="#" class="prevent-default reaccion" data-tipo="0">
+                            <i class="far fa-thumbs-down h5"></i>
+                            <span id="cntDislikes"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- filtro de comentarios -->
+        <div class="row pt-3 pb-3">
+            <div class="col-sm-4">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item mr-2">
+                        <select name="" id="filtroComentarios" class="form-control">
+                            <option value="reciente" selected>Comentarios mas recientes</option>
+                            <option value="primeros">Comentarios mas antiguos</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- comentarios -->
+        <div class="row pt-3 pb-3">
+            <div id="userComments" class="col-sm-12"></div>
+        </div>
+        <!-- nuevo comentario -->
+        <div class="row">
+            <div class="col-sm-12">
+                <form>
+                    <div class="form-group">
+                        <label for="comentario" class="lectura col-form-label">Escribe un comentario:</label>
+                        <textarea class="form-control" id="comentario"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button id="comentar" type="button" class="btn btn-outline-primary">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- menu contextual -->
+    <div id="menuContextual" class="list-group">
+        <button id="btnNuevoMarcador" type="button" class="list-group-item list-group-item-action active">
+          Agregar marcador
+        </button>
+    </div>
+
+    <script src="resources/jquery/jquery-3.2.1.min.js"></script>
+    <script src="resources/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/constantes.js?v=201020201700"></script>
+    <script src="js/escrito.js?v=201020201700"></script>
+</body>
+</html>
